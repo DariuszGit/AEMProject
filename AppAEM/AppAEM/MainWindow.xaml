@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppAEM"
+        xmlns:sparrowToolkit="http://sparrowtoolkit.codeplex.com/wpf"
+        x:Class="AppAEM.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <WrapPanel VerticalAlignment="Center">
+            <Button Margin="5,5,5,5" VerticalAlignment="Center" Click="Button_Click">
+                <TextBlock Text="Mobius"/>
+            </Button>
+            <Button Margin="5,5,5,5" VerticalAlignment="Center" Click="Button_Click_1">
+                <TextBlock Text="Euler"/>
+            </Button>
+            <Button Margin="5,5,5,5" VerticalAlignment="Center" Click="Button_Click_2">
+                <TextBlock Text="DiffieHellman"/>
+            </Button>
+            <Button Margin="5,5,5,5" VerticalAlignment="Center" Click="Button_Click_3">
+                <TextBlock Text="RSA"/>
+            </Button>
+        </WrapPanel>
+        <Grid Grid.Row="1" x:Name="contentGrid">
+            
+        </Grid>
+
+    </Grid>
+</Window>
